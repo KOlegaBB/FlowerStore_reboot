@@ -7,7 +7,7 @@ import ua.edu.ucu.apps.demo.Delivery.DHLDeliveryStrategy;
 import ua.edu.ucu.apps.demo.Delivery.*;
 import ua.edu.ucu.apps.demo.Flower.*;
 import ua.edu.ucu.apps.demo.Item.Item;
-import ua.edu.ucu.apps.demo.User.User;
+import ua.edu.ucu.apps.demo.FlowerUser.FlowerUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ public class DeliveryTest {
 
     @Test
     public void testDelivery() {
-        User user = new User("Bob", 200);
+        FlowerUser user = new FlowerUser("Bob", 200);
         Flower flower_1 = new Rose();
         Flower flower_2 = new Tulip();
         Flower flower_3 = new Rose();

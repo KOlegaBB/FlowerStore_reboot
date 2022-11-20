@@ -5,7 +5,7 @@ import lombok.Setter;
 import ua.edu.ucu.apps.demo.Delivery.Delivery;
 import ua.edu.ucu.apps.demo.Item.Item;
 import ua.edu.ucu.apps.demo.Payment.Payment;
-import ua.edu.ucu.apps.demo.User.User;
+import ua.edu.ucu.apps.demo.FlowerUser.FlowerUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class Order {
         items.remove(item);
     }
 
-    public void processOrder(User user){
+    public void processOrder(FlowerUser user){
         double price = calculateTotalPrice();
         payment.pay(price, user);
         delivery.deliver(items, user);

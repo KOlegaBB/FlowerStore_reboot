@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.demo.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ua.edu.ucu.apps.demo.User.User;
+import ua.edu.ucu.apps.demo.FlowerUser.FlowerUser;
 
 
 @RequestMapping
@@ -13,7 +13,7 @@ public class PaymentController {
     public String payment() {
         CreditCardPaymentStrategy credit = new CreditCardPaymentStrategy();
         PayPalPaymentStrategy paypal = new PayPalPaymentStrategy();
-        User user = new User("Bob", 200);
+        FlowerUser user = new FlowerUser("Bob", 200);
         credit.pay(20, user);
         String message = "Bob have 200$. He pay 10$ using CreditCard. Now he have: " + user.getMoney() + "\n";
         paypal.pay(20, user);

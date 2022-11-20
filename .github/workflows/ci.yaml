@@ -29,7 +29,6 @@ jobs:
         run: psql -c 'create database flowers;' postgresql://postgres:postgres@localhost:5432/postgres
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
-        working-directory: ./FlowerStore_reboot
         env:
           POSTGRES_HOST: postgres
           POSTGRES_PASSWORD: postgres

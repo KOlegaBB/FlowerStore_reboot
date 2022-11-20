@@ -1,7 +1,7 @@
-GET http://localhost:8080/flower
+GET  https://dry-chamber-85395.herokuapp.com/flower
 
 ###
-POST http://localhost:8080/flower
+POST  https://dry-chamber-85395.herokuapp.com/flower
 Content-Type: application/json
 
 {

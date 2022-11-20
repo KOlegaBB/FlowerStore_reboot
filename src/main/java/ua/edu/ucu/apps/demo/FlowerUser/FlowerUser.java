@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.demo.User;
+package ua.edu.ucu.apps.demo.FlowerUser;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class User {
+public class FlowerUser {
     @Setter
     @Getter
     double money;
     String name;
     List<Item> items = new ArrayList<>();
 
-    public User(String name, double money){
+    public FlowerUser(String name, double money){
         this.name = name;
         this.money = money;
     }
